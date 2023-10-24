@@ -7,11 +7,49 @@ import UserPlusIcon from '@heroicons/react/24/solid/UserPlusIcon';
 import UsersIcon from '@heroicons/react/24/solid/UsersIcon';
 import XCircleIcon from '@heroicons/react/24/solid/XCircleIcon';
 import { SvgIcon } from '@mui/material';
+import InventoryIcon from '@mui/icons-material/Inventory';
+import ScannerIcon from '@mui/icons-material/Scanner';
 
 export const items = [
   {
+    title: 'Projects',
+    path: '/projects',
+    icon: (
+      <SvgIcon fontSize="small">
+        <InventoryIcon />
+      </SvgIcon>
+    )
+  },
+  {
+    title: 'Samples',
+    path: '/projects/1/samples',
+    icon: (
+      <SvgIcon fontSize="small">
+        <InventoryIcon />
+      </SvgIcon>
+    )
+  },
+  {
+    title: 'Metadata',
+    path: '/metadata',
+    icon: (
+      <SvgIcon fontSize="small">
+        <ChartBarIcon />
+      </SvgIcon>
+    )
+  },
+  {
+    title: 'Scanners',
+    path: '/scanners',
+    icon: (
+      <SvgIcon fontSize="small">
+        <ScannerIcon />
+      </SvgIcon>
+    )
+  },
+  {
     title: 'Overview',
-    path: '/',
+    path: '/overview',
     icon: (
       <SvgIcon fontSize="small">
         <ChartBarIcon />

@@ -42,19 +42,21 @@ export const SideNav = (props) => {
           height: '100%'
         }}
       >
-        <Box sx={{ p: 3 }}>
+        <Box sx={{ p: 3 ,
+                      backgroundColor:'white'
+                    }}>
           <Box
             component={NextLink}
             href="/"
             sx={{
               display: 'inline-flex',
-              height: 32,
-              width: 32
+              // height: 32,
+              // width: 32,
             }}
           >
             <Logo />
           </Box>
-          <Box
+          {/* <Box
             sx={{
               alignItems: 'center',
               backgroundColor: 'rgba(255, 255, 255, 0.04)',
@@ -86,7 +88,7 @@ export const SideNav = (props) => {
             >
               <ChevronUpDownIcon />
             </SvgIcon>
-          </Box>
+          </Box> */}
         </Box>
         <Divider sx={{ borderColor: 'neutral.700' }} />
         <Box
@@ -130,7 +132,7 @@ export const SideNav = (props) => {
             py: 3
           }}
         >
-          <Typography
+          {/* <Typography
             color="neutral.100"
             variant="subtitle2"
           >
@@ -141,8 +143,8 @@ export const SideNav = (props) => {
             variant="body2"
           >
             Check out our Pro solution template.
-          </Typography>
-          <Box
+          </Typography> */}
+          {/* <Box
             sx={{
               display: 'flex',
               mt: 2,
@@ -157,7 +159,7 @@ export const SideNav = (props) => {
               alt="Go to pro"
               src="/assets/devias-kit-pro.png"
             />
-          </Box>
+          </Box> */}
           <Button
             component="a"
             endIcon={(
@@ -166,13 +168,44 @@ export const SideNav = (props) => {
               </SvgIcon>
             )}
             fullWidth
-            href="https://material-kit-pro-react.devias.io/"
+            href="https://ecotaxa.obs-vlfr.fr"
             sx={{ mt: 2 }}
             target="_blank"
             variant="contained"
           >
-            Pro Live Preview
+            Ecotaxa
           </Button>
+          <Button
+            component="a"
+            endIcon={(
+              <SvgIcon fontSize="small">
+                <ArrowTopRightOnSquareIcon />
+              </SvgIcon>
+            )}
+            fullWidth
+            href="http://ecotaxa-dev.imev-mer.fr:5003"
+            sx={{ mt: 2 }}
+            target="_blank"
+            variant="contained"
+          >
+            Ecotaxa Dev
+          </Button>
+          <Button
+            component="a"
+            endIcon={(
+              <SvgIcon fontSize="small">
+                <ArrowTopRightOnSquareIcon />
+              </SvgIcon>
+            )}
+            fullWidth
+            href="https://www.figma.com/file/gSBCVILRQvJFbzO7ihVSy0/Zooprocess---Mockup?type=design&node-id=0-1&mode=design&t=k7qK0joMelDr9Kvg-0"
+            sx={{ mt: 2 }}
+            target="_blank"
+            variant="contained"
+          >
+            Figma
+          </Button>
+          
         </Box>
       </Box>
     </Scrollbar>
