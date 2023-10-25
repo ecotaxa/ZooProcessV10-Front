@@ -22,6 +22,7 @@ export function MyForm(props){
     //     fraction_inputFormElments
     //   ]      
     // const forms = props.forms;
+    // const {forms,onChange,onCancel} = props;
     const {forms} = props;
 
     // const [myform, setMyForm] = useState({});
@@ -49,7 +50,7 @@ export function MyForm(props){
     
         return (
             <Grid xs={item.xs} sm={item.sm} item>
-                <FormElements {...item} onChange={onChange}/>
+                <FormElements {...item} onChange={onChangeElement}/>
             </Grid>
         )
     }
@@ -91,7 +92,7 @@ export function MyForm(props){
         return type
     }
 
-    const onChange = (name,value) => {
+    const onChangeElement = (name,value) => {
         console.log("onChange:",name,value)    
         const type = searchtypeof(name)
         console.log("type:",type)
@@ -114,6 +115,7 @@ export function MyForm(props){
         });
         console.log("data",data)
         setMyForm(data)
+        props.onCancel()
     }
     
     const onSubmitHandler = (event /*: React.FormEvent<HTMLFormElement>*/) => {

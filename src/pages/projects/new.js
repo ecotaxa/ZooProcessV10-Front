@@ -7,6 +7,7 @@ import { MyForm } from 'src/components/myForm';
 import { inputFormElements } from 'src/services/formElements';
 import { useState } from 'react';
 import { projectForm } from '../../services/formElements';
+import { useRouter } from 'next/router';
  
 
 
@@ -24,7 +25,7 @@ const testData = {
 
 
 const Page = () => {
-
+    const router = useRouter()
     
     const form = []
         form['forms']=projectForm
@@ -47,6 +48,13 @@ const Page = () => {
         console.log("App onChange:", stringifiedData)
     }
 
+    const onCancel = () => {
+        router.push({
+            pathname: '/projects/',
+            // query: { pid: params.id },                                         
+        })
+    }
+
     return (
         <>
         <Head>
@@ -66,7 +74,7 @@ const Page = () => {
                 <Typography variant="h4">
                 Metadata
                 </Typography>
-                <MyForm {...form} onChange={onChange}/>
+                <MyForm {...form} onChange={onChange} onCancel={onCancel}/>
             </Stack>
             </Container>
         </Box>
