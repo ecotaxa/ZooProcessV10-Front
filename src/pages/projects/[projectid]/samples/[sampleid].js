@@ -22,7 +22,7 @@ var samples = [
 
 const Page = () => {
     const router = useRouter()
-    const projectid = router.query.id //as string
+    const projectid = router.query.projectid //as string
     const sampleid = router.query.sampleid //as string
 
     return (

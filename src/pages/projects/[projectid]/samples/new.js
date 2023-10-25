@@ -51,6 +51,7 @@ const Page = () => {
 
     const router = useRouter()
 
+    const projectid = router.query.projectid //as string
     
     const form = []
         form['forms']=forms
@@ -75,8 +76,8 @@ const Page = () => {
 
     const onCancel = () => {
         router.push({
-            pathname: '/projects/',
-            // query: { pid: params.id },                                         
+            pathname: '/projects/[projectid]',
+            query: { projectid: projectid },                                         
         })
     }
 
@@ -84,7 +85,7 @@ const Page = () => {
         <>
         <Head>
             <title>
-            Metadata | ZooProcess
+            New Sample Metadata | ZooProcess
             </title>
         </Head>
         <Box
@@ -97,7 +98,7 @@ const Page = () => {
             <Container maxWidth="lg">
             <Stack spacing={3}>
                 <Typography variant="h4">
-                Metadata
+                Sample Metadata for project {projectid}
                 </Typography>
                 <MyForm {...form} onChange={onChange} onCancel={onCancel}/>
             </Stack>

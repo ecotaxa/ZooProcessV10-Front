@@ -1,11 +1,11 @@
 import Head from 'next/head';
 import { Box, Container, Stack, Typography } from '@mui/material';
 
-// import { Layout as DashboardLayout } from 'src/layouts/dashboard/layout';
-import { Layout as DashboardLayout } from '../../../../layouts/dashboard/layout';
+import { Layout as DashboardLayout } from 'src/layouts/dashboard/layout';
+// import { Layout as DashboardLayout } from '../../../../layouts/dashboard/layout';
 
-import { SamplesTable } from '../../../../sections/samples/samples-table';
-// import { SamplesTable } from 'src/sections/samples/samples-table';
+// import { SamplesTable } from '../../../../sections/samples/samples-table';
+import { SamplesTable } from 'src/sections/samples/samples-table';
  
 
 
@@ -25,7 +25,7 @@ const Page = () => (
   <>
     <Head>
       <title>
-        Projects | ZooProcess
+        Samples for Project | ZooProcess
       </title>
     </Head>
     <Box

@@ -85,7 +85,7 @@ const Page = () => {
     router.push({
       pathname: '/projects/new',
       // query: { pid: params.id },                                         
-  })
+    })
   }
 
   return (
