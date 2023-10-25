@@ -6,10 +6,10 @@ module.exports = {
         source: '/',
         destination: '/projects',
       },
-      {
-        source: '/projects/:id/samples',
-        destination: '/projects/:id',
-      },
+      // {
+      //   source: '/projects/:id/samples',
+      //   destination: '/projects/:id',
+      // },
     ]
   },
 }
