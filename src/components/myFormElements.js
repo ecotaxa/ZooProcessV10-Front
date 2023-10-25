@@ -29,7 +29,7 @@ export function FormElements(props) {
         case "Select":
             return <MySelect {...props} onChange={props.onChange}/>
         case "DateField":
-            return <MySelect {...props} onChange={props.onChange}/>
+            <MyDatePicker {...props} onChange={props.onChange}/>
         case "TextArea":
             return <TextareaAutosize {...props}  onChange={props.onChange}/>
     }
