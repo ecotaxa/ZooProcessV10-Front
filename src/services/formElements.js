@@ -317,7 +317,7 @@ export const inputFormElements_tow_type_vertical=[
         ]
     },
     { tag:"Select", name:"sample_richness", type:"select", 
-        placeholder:"SAMPLE richness", label:'SAMPLE richness',
+        placeholder:"Sample richness", label:'Sample richness',
         variant:"outlined", fullWidth:true, required:true, 
         xs:12, sm:12, sx:{m:0, minWith:300},
         choice:[
@@ -327,7 +327,7 @@ export const inputFormElements_tow_type_vertical=[
         ]
     },
     { tag:"Select", name:"sample_conditioning", type:"select", 
-        placeholder:"SAMPLE conditioning", label:'SAMPLE conditioning',
+        placeholder:"Sample conditioning", label:'Sample conditioning',
         variant:"outlined", fullWidth:true, required:true, 
         xs:12, sm:12, sx:{m:0, minWith:300},
         choice:[
@@ -337,7 +337,7 @@ export const inputFormElements_tow_type_vertical=[
         ]
     },
     { tag:"Select", name:"sample_content", type:"select", 
-        placeholder:"SAMPLE content", label:'SAMPLE content',
+        placeholder:"Sample content", label:'Sample content',
         variant:"outlined", fullWidth:true, required:true, 
         xs:12, sm:12, sx:{m:0, minWith:300},
         choice:[
@@ -544,18 +544,18 @@ export const scannerCalibrationElements= [
         title:"Scanner Calibration",
         section:
         [
-            { name:"optical_density_xposition", placeholder:"Optical density Xposition", label:'Optical density Xposition',
-            tag:"TextField", type:"number",
-            required:false, disabled:true,
-            variant:"outlined", fullWidth:false, 
-            xs:12, sm:6, size:"small"
-            },
-            { name:"optical_density_yposition", placeholder:"Optical density Yposition", label:'Optical density Yposition',
-            tag:"TextField", type:"number",
-            required:false, disabled:true,
-            variant:"outlined", fullWidth:false, 
-            xs:12, sm:6, size:"small"
-            },
+            // { name:"optical_density_xposition", placeholder:"Optical density Xposition", label:'Optical density Xposition',
+            // tag:"TextField", type:"number",
+            // required:false, disabled:true,
+            // variant:"outlined", fullWidth:false, 
+            // xs:12, sm:6, size:"small"
+            // },
+            // { name:"optical_density_yposition", placeholder:"Optical density Yposition", label:'Optical density Yposition',
+            // tag:"TextField", type:"number",
+            // required:false, disabled:true,
+            // variant:"outlined", fullWidth:false, 
+            // xs:12, sm:6, size:"small"
+            // },
             { name:"xoffset_large", placeholder:"XOffset (Large)", label:'XOffset',
             tag:"TextField", type:"number",
             required:false, disabled:true,
