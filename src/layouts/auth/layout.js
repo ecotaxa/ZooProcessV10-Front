@@ -101,7 +101,10 @@ export const Layout = (props) => {
               src="/assets/02_logo-EquipeLOV-COMPLEx.png"
             />
             </Typography>
-          <Stack direction="column" spacing={2} alignItems="flex-end">
+          <Stack 
+              direction="column" 
+              spacing={2} 
+              alignItems="flex-end">
             <item><img 
               alt=""
               src="/assets/ZooScan_Corinne.png"

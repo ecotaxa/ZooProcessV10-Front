@@ -40,7 +40,11 @@ export function MySelect(props){
     }
 
     return (
-    <FormControl {...opts} fullWidth={props.fullWidth}  sx={ sxValue()} size="regular">
+    <FormControl {...opts} 
+            fullWidth={props.fullWidth}
+            sx={ sxValue()} 
+            size="regular"
+        >
         <InputLabel id="demo-select-small-label">{props.name}</InputLabel>
             <Select 
                 value={value} 
@@ -53,12 +57,16 @@ export function MySelect(props){
             {
                 // console.log(props.choice)
             }
-                <MenuItem key={0} value={0}></MenuItem>
+                <MenuItem key={0}
+                    value={0}></MenuItem>
             {
                 props.choice.map( choix => 
                     // <MenuItem value={choix.id} key={choix.id}>{choix.value}</MenuItem> // ne change rien pour le warning 'list should have a unique "key" prop'
                     //<MenuItem key={choix.id} value={choix.id.toString()}>{choix.value}</MenuItem>
-                    <MenuItem key={choix.id} value={choix.id}>{choix.value}</MenuItem>
+                    <MenuItem 
+                        key={choix.id} 
+                        value={choix.id}
+                    >{choix.value}</MenuItem>
             )}
             </Select>
         </FormControl>

@@ -72,9 +72,12 @@ const Page = () => {
             <Container maxWidth="lg">
             <Stack spacing={3}>
                 <Typography variant="h4">
-                Metadata
+                    Metadata
                 </Typography>
-                <MyForm {...form} onChange={onChange} onCancel={onCancel}/>
+                <MyForm {...form} 
+                    onChange={onChange} 
+                    onCancel={onCancel}
+                />
             </Stack>
             </Container>
         </Box>

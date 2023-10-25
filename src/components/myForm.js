@@ -49,8 +49,14 @@ export function MyForm(props){
         item['value']= v
     
         return (
-            <Grid xs={item.xs} sm={item.sm} item>
-                <FormElements {...item} onChange={onChangeElement}/>
+            <Grid 
+              xs={item.xs} 
+              sm={item.sm} 
+              item
+            >
+              <FormElements {...item} 
+                onChange={onChangeElement}
+              />
             </Grid>
         )
     }
@@ -58,13 +64,30 @@ export function MyForm(props){
     const formElements = (myJsonForm=[]) => {
         return (       
             myJsonForm.map(input => 
-                <Grid container spacing={0} rowSpacing={0} border={0} marginBottom={1} marginTop={1}>
-                    <Grid xs={12} marginTop={6} marginBottom={2}>
-                        <Typography variant='subtitle1' align='center' gutterBottom>{input.title}</Typography>
-                    </Grid>
-                    <Grid container spacing={0} rowSpacing={3} columnSpacing={1} xs={12}>
-                        {input.section.map(item => myElement(item))}
-                    </Grid>
+                <Grid container 
+                  spacing={0} 
+                  rowSpacing={0} 
+                  border={0} 
+                  marginBottom={1} 
+                  marginTop={1}
+                >
+                  <Grid xs={12} 
+                    marginTop={6} 
+                    marginBottom={2}
+                  >
+                    <Typography variant='subtitle1' 
+                      align='center' 
+                      gutterBottom
+                    >{input.title}</Typography>
+                  </Grid>
+                  <Grid container 
+                      spacing={0} 
+                      rowSpacing={3} 
+                      columnSpacing={1} 
+                      xs={12}
+                    >
+                    {input.section.map(item => myElement(item))}
+                  </Grid>
                 </Grid>
             )
         );
@@ -138,10 +161,12 @@ export function MyForm(props){
           <Grid style={{padding: "80px 5px 5px"}}>
             <Card style={{ maxWidth: 800, margin: "0 auto"}}>
               <CardContent>
-                <Typography variant="h4" color="primary">
+                <Typography variant="h4" 
+                  color="primary">
                     {title}
                 </Typography>
-                <Typography variant="subtitle1" color="textSecondary">
+                <Typography variant="subtitle1" 
+                  color="textSecondary">
                     {subtitle}
                 </Typography>
                 <form onSubmit={onSubmitHandler}>
@@ -150,10 +175,29 @@ export function MyForm(props){
                       forms.map( input => formElements(input) )
                     }
     
-                    <Grid item xs={12} marginTop={2} align="right" margin={2}  >
-                      <Button style={margin} type="reset" variant="outlined" color="primary" onClick={init}>Refill</Button>
-                      <Button style={margin} type="reset" variant="outlined" color="primary" onClick={reset}>Cancel</Button>
-                      <Button type="submit" variant="contained" color="primary">Submit</Button>
+                    <Grid 
+                        item 
+                        xs={12} 
+                        marginTop={2} 
+                        align="right" 
+                        margin={2}  
+                      >
+                      <Button style={margin} 
+                        type="reset" 
+                        variant="outlined" 
+                        color="primary" 
+                        onClick={init}
+                      >Refill</Button>
+                      <Button style={margin} 
+                        type="reset" 
+                        variant="outlined" 
+                        color="primary" 
+                        onClick={reset}
+                      >Cancel</Button>
+                      <Button type="submit" 
+                        variant="contained" 
+                        color="primary"
+                      >Submit</Button>
                     </Grid>
     
                   </Grid>

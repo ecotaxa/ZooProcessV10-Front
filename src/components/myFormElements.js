@@ -25,13 +25,17 @@ export function FormElements(props) {
 
     switch ( props.tag ){
         case "TextField":
-            return <MyTextField {...props} onChange={props.onChange}/>
+            return <MyTextField {...props} 
+                onChange={props.onChange}/>
         case "Select":
-            return <MySelect {...props} onChange={props.onChange}/>
+            return <MySelect {...props} 
+                onChange={props.onChange}/>
         case "DateField":
-            <MyDatePicker {...props} onChange={props.onChange}/>
+            <MyDatePicker {...props} 
+                onChange={props.onChange}/>
         case "TextArea":
-            return <TextareaAutosize {...props}  onChange={props.onChange}/>
+            return <TextareaAutosize {...props}  
+                onChange={props.onChange}/>
     }
 
     return (

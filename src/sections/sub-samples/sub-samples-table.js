@@ -25,7 +25,10 @@ export function SubSamplesTable(props) {
                     <div>
                         <Button 
                             data-testid="action_btn"
-                            variant="contained" size="small" color="primary" disableRipple
+                            variant="contained" 
+                            size="small" 
+                            color="primary" 
+                            disableRipple
                             onClick={() => 
                                 router.push({
                                     pathname: '/projects/[projectId]/samples/[sampleId]/subsamples/[subsampleid]',

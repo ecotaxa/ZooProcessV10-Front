@@ -100,7 +100,10 @@ const Page = () => {
                 <Typography variant="h4">
                 Sample Metadata for project {projectid}
                 </Typography>
-                <MyForm {...form} onChange={onChange} onCancel={onCancel}/>
+                <MyForm 
+                    {...form} 
+                    onChange={onChange} 
+                    onCancel={onCancel}/>
             </Stack>
             </Container>
         </Box>

@@ -44,7 +44,10 @@ const Page = () => {
             <Typography variant="h4">
               Sample {sampleid} -- projects/[id={projectid}]/samples/[id]
             </Typography>
-            <SubSamplesTable project={projectid} sample={sampleid} subsamples={samples}/>
+            <SubSamplesTable 
+              project={projectid} 
+              sample={sampleid} 
+              subsamples={samples}/>
             </Stack>
         </Container>
         </Box>

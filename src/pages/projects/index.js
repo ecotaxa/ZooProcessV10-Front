@@ -107,7 +107,10 @@ const Page = () => {
               <Typography variant="h4">
                 Projects index
               </Typography>
-              <Card data-testid="projectCard" sx={{ width:'100%' }}>
+              <Card 
+                  data-testid="projectCard" 
+                  sx={{ width:'100%' }}
+                >
                 <CardActions sx={{ justifyContent: 'flex-end' }}>
                     <Button onClick={handleNewProjectBtn}>Add new project</Button>
                 </CardActions>

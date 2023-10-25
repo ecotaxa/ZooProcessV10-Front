@@ -66,7 +66,10 @@ const Page = () => {
                 <Typography variant="h4">
                 Scanner
                 </Typography>
-                <MyForm {...form} onChange={onChange}/>
+                <MyForm 
+                    {...form} 
+                    onChange={onChange}
+                />
             </Stack>
             </Container>
         </Box>

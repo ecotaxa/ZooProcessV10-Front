@@ -49,13 +49,16 @@ const Page = () => {
               <Typography variant="h4">
                 Project {projectid} -- projects/[id].js
               </Typography>
-              <Card data-testid="projectCard" sx={{ width:'100%' }}>
+              <Card data-testid="projectCard" 
+                  sx={{ width:'100%' }}>
                   <CardActions sx={{ justifyContent: 'flex-end' }}>
                       <Button onClick={handleNewProjectBtn}>Add new sample</Button>
                   </CardActions>
                   <Divider/>
                   <CardContent >
-                    <SamplesTable project={projectid} samples={samples}/>
+                    <SamplesTable 
+                      project={projectid} 
+                      samples={samples}/>
                   </CardContent>
               </Card>
             </Stack>
