@@ -46,15 +46,15 @@ export function SamplesTable(props) {
     const [rows, setRows] = useState(samples)
 
     return (
-        <Card>
-            <CardActions sx={{ justifyContent: 'flex-end' }}>
-                <Button>Add new sample</Button>
-            </CardActions>
-            <Divider/>
-            <CardContent>
-            <Typography variant="h5">
-              Project {project}
-            </Typography>
+        // <Card>
+        //     <CardActions sx={{ justifyContent: 'flex-end' }}>
+        //         <Button>Add new sample</Button>
+        //     </CardActions>
+        //     <Divider/>
+        //     <CardContent>
+        //     <Typography variant="h5">
+        //       Project {project}
+        //     </Typography>
             <DataGrid      
                 // style={{height: '100%', width: '100%'}} 
                 autoHeight 
@@ -76,8 +76,8 @@ export function SamplesTable(props) {
                 pageSizeOptions={[5, 10]}
                 // checkboxSelection
             />
-            </CardContent>
-        </Card>
+        //     </CardContent>
+        // </Card>
     )
 
 }
