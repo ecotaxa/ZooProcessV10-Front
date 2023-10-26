@@ -1,6 +1,7 @@
 import Head from 'next/head';
-import { Box, Button, Card, CardActions, CardContent, Container, Divider, Stack, Typography } from '@mui/material';
+import { Box, Typography } from '@mui/material';
 import { useRouter } from 'next/router';
+import { Layout as DashboardLayout } from 'src/layouts/dashboard/layout';
 
 
 const Page = () => {
@@ -25,7 +26,7 @@ const Page = () => {
             }}
             >
                 <Typography>
-                    Sub-Samples {subsampleid}
+                    Sub-Samples {projectid}/{sampleid}/{subsampleid}
                 </Typography>
             </Box>
         </>
