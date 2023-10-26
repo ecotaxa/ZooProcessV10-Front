@@ -46,17 +46,20 @@ const Page = () => {
         >
         <Container maxWidth="1400px" >
             <Stack spacing={3}>
-              <Typography variant="h4">
+              <Typography variant="h4" data-testid="title">
                 Project {projectid} -- projects/[id].js
               </Typography>
-              <Card data-testid="projectCard" 
+              <Card data-testid="samplesCard" 
                   sx={{ width:'100%' }}>
                   <CardActions sx={{ justifyContent: 'flex-end' }}>
-                      <Button onClick={handleNewProjectBtn}>Add new sample</Button>
+                      <Button onClick={handleNewProjectBtn}
+                        data-testid="newSampleBtn"
+                        >Add new sample</Button>
                   </CardActions>
                   <Divider/>
                   <CardContent >
                     <SamplesTable 
+                      data-testid="samplelist"
                       project={projectid} 
                       samples={samples}/>
                   </CardContent>

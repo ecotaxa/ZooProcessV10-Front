@@ -1,13 +1,18 @@
 import Head from 'next/head';
 import { Box, Button, Card, CardActions, CardContent, Container, Divider, Stack, Typography } from '@mui/material';
 
-import { Layout as DashboardLayout } from 'src/layouts/dashboard/layout';
-import { ProjectsTable } from 'src/sections/projects/projects-table';
-import { useRouter } from 'next/router';
-// import { DashboardLayout } from '../../layouts/dashboard/layout';
+// import { Layout as DashboardLayout } from 'src/layouts/dashboard/layout';
+// import { Layout } from 'src/layouts/dashboard/layout';
+// import { ProjectsTable } from 'src/sections/projects/projects-table';
+// import { Layout as DashboardLayout } from '@layouts/dashboard/layout';
+// import { ProjectsTable } from '@sections/projects/projects-table';
 
-// import { ProjectsTable } from '../../sections/projects/projects-table';
- 
+import { useRouter } from 'next/router';
+// import { Layout } from 'src/layouts/dashboard/layout';
+import { ProjectsTable } from 'src/sections/projects/projects-table';
+import { Layout as DashboardLayout } from 'src/layouts/dashboard/layout';
+
+
 
 const projects = [
     {
@@ -104,7 +109,7 @@ const Page = () => {
         >
           <Container maxWidth="lg">
             <Stack spacing={3}>
-              <Typography variant="h4">
+              <Typography variant="h4" data-testid="title">
                 Projects index
               </Typography>
               <Card 
@@ -112,7 +117,9 @@ const Page = () => {
                   sx={{ width:'100%' }}
                 >
                 <CardActions sx={{ justifyContent: 'flex-end' }}>
-                    <Button onClick={handleNewProjectBtn}>Add new project</Button>
+                    <Button onClick={handleNewProjectBtn} 
+                      data-testid="newProjectBtn"
+                    >Add new project</Button>
                 </CardActions>
                 <Divider/>
                 <CardContent >
