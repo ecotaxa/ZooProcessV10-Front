@@ -31,11 +31,11 @@ export function SubSamplesTable(props) {
                             disableRipple
                             onClick={() => 
                                 router.push({
-                                    pathname: '/projects/[projectId]/samples/[sampleId]/subsamples/[subsampleid]',
+                                    pathname: '/projects/[projectid]/samples/[sampleid]/subsamples/[subsampleid]',
                                     query: { 
-                                        projectId: project, 
-                                        sampleId: sample,                                         
-                                        subsampleId: params.id },                                         
+                                        projectid: project, 
+                                        sampleid: sample,                                         
+                                        subsampleid: params.id },                                         
                                 })
                             }
                         >
@@ -50,15 +50,15 @@ export function SubSamplesTable(props) {
     const [rows, setRows] = useState(subsamples)
 
     return (
-        <Card>
-            <CardActions sx={{ justifyContent: 'flex-end' }}>
-                <Button>Add new sub sample</Button>
-            </CardActions>
-            <Divider/>
-            <CardContent>
-            <Typography variant="h5">
-              Sample {sample}
-            </Typography>
+        // <Card>
+        //     <CardActions sx={{ justifyContent: 'flex-end' }}>
+        //         <Button>Add new sub sample</Button>
+        //     </CardActions>
+        //     <Divider/>
+        //     <CardContent>
+        //     <Typography variant="h5">
+        //       Sample {sample}
+        //     </Typography>
             <DataGrid      
                 // style={{height: '100%', width: '100%'}} 
                 autoHeight 
@@ -80,8 +80,8 @@ export function SubSamplesTable(props) {
                 pageSizeOptions={[5, 10]}
                 // checkboxSelection
             />
-            </CardContent>
-        </Card>
+        //     </CardContent>
+        // </Card>
     )
 
 }
